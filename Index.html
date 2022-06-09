@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Developer Application</title>
+        <link rel="stylesheet" type="text/css" href="style.css" /> 
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <h1>Developer Job Application 🚀</h1>
+        <p>Thanks for your interest in joining our startup.</p>
+        <form action="#">
+            <!--Personal Information: name, email, aga, phone -->
+            <fieldset>
+                <label>
+                    <div class="comments">Name</div>
+                    <input type="text" placeholder="Enter your name" name="full name" required/>
+                </label>
+                <label>
+                    <div class="comments">Age</div>
+                    <input type="number" placeholder="Enter your age" min="18" max="63" name="age" required/>
+                </label>
+                <label>
+                    <div class="comments">Email</div> 
+                    <input type="email" placeholder="Enter your email" name="email" required/>
+                </label>
+                <label>
+                   <div class="comments">Phone Number</div>  
+                    <input type="tel" placeholder="Enter your phone number" name="phone number" required/>
+                </label>
+                <label>
+                    <div class="comments">Country</div> 
+                    <input type="text" placeholder="Enter your country" name="country" required/>
+                </label>
+            </fieldset>
+            <!--roles, languages and education-->
+            <fieldset>
+                <label>
+                    <div class="comments">Which role you want fill?</div>
+                    <select>
+                        <option>---</option>
+                        <option value="web">Web Developer</option>
+                        <option value="mobile">Mobile Developer</option>
+                        <option value="desktop">Desktop Developer</option>
+                    </select>
+                </label>
+                <!--languages checkboxes-->
+                <div class="comments">Which programming languages you use?</div>
+                <label><input type="checkbox" name="language" /> JavaScript</label>
+                <label><input type="checkbox" name="language"/> Python</label>
+                <label><input type="checkbox" name="language"/> Ruby</label>
+                <label><input type="checkbox" name="language"/> C++</label>
+                <label><input type="checkbox" name="language"/> C</label>
+                <label><input type="checkbox" name="language"/> Java</label>
+                <label><input type="checkbox" name="language"/> PHP</label>
+                <label><input type="checkbox" name="language"/> C#</label>
+                <label><input type="checkbox" name="language"/> GO</label>
+                <label><input type="checkbox" name="language"/> Typescript</label>
+
+                <div class="comments">How did you learned coding?</div>
+                <label><input type="radio" name="education" /> College</label>
+                <label><input type="radio" name="education"/> Self thaught</label>
+            </fieldset>
+            <!--Experience, resume, cover letter-->
+            <fieldset>
+                <div class="comments">Tell us about your past experience?</div>
+                <label><input type="checkbox" name="experience"/>Job</label>
+                <label><input type="checkbox" name="experience"/>Freelance</label>
+                <label><input type="checkbox" name="experience"/>Personal Project(s)</label>
+                <label><input type="checkbox" name="experience"/>Open Source</label>
+                <label><input type="checkbox" name="experience"/>Other</label>
+                
+                <label>
+                    <div class="comments">Upload your resume</div>
+                    <input type="file" name="resume" />
+                </label>
+                
+                <label>
+                    <div class="comments">Write your cover letter</div>
+                    <textarea rows="3" cols="30" name="cover letter"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="submit"/>
+        </form>
+    </body>
+</html>
